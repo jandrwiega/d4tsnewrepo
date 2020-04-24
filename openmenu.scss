@@ -23,7 +23,7 @@ position: absolute;
 {
     width: 100%;
     height: 5px;
-    background-color: white;
+    background-color: silver;
     position: absolute;
     left: 0;
     top: 50%;
@@ -36,7 +36,7 @@ position: absolute;
     left: 0;
     width: 100%;
     height: 5px;
-    background-color: white;
+    background-color: silver;
     position: absolute;
     transition: transform .3s .2s ease-in-out;
 }
@@ -62,7 +62,8 @@ top:10px;
 }
 .navigation
 {
-    height: 100%;
+   min-height: 100vh;
+   // min-height: 340px;
     @media(max-width: 499px)
     {
         width: 100%;
@@ -80,7 +81,7 @@ top:10px;
         width: 50%;
     }
     z-index: 5;
-    background-color: mediumaquamarine;
+    background-color: brown;
     position: fixed;
     top: 0;
     left: 0;
@@ -96,9 +97,39 @@ top:10px;
 .nav__box
 {
     flex-basis: 90%;
-    background-color: red;
-    height: 80vh;
-    min-height: 300px;
-    max-height: 500;
-    margin-top: 50px;
+    height: 350px;
+   // margin-top: 50px;
+   display: flex;
+   flex-wrap: wrap;
+   @media(max-width: 799px)
+{
+    margin-top: 70px;
+}
+@media(min-width: 800px)
+{
+    margin-top: 100px;
+}
+@media(max-height: 500px)
+{
+    margin-top: 20px;
+}
+}
+.onas, .oferta, .realizacja, .kontakt
+{
+flex-basis: 100%;
+height: 80px;
+font-size: 32px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: whitesmoke;
+transition: all .3s ease-in-out;
+}
+.onas:hover, .oferta:hover, .realizacja:hover, .kontakt:hover
+{
+background-color: lighten(brown, 20%);
+border-radius: 25px;
+cursor: pointer;
+//font-weight: bold;
+color: white;
 }

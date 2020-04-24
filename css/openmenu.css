@@ -29,7 +29,7 @@
 .hamburger__inner {
   width: 100%;
   height: 5px;
-  background-color: white;
+  background-color: silver;
   position: absolute;
   left: 0;
   top: 50%;
@@ -44,7 +44,7 @@
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: white;
+  background-color: silver;
   position: absolute;
   -webkit-transition: -webkit-transform .3s .2s ease-in-out;
   transition: -webkit-transform .3s .2s ease-in-out;
@@ -75,9 +75,9 @@
 }
 
 .navigation {
-  height: 100%;
+  min-height: 100vh;
   z-index: 5;
-  background-color: mediumaquamarine;
+  background-color: brown;
   position: fixed;
   top: 0;
   left: 0;
@@ -127,10 +127,55 @@
 .nav__box {
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
-  background-color: red;
-  height: 80vh;
-  min-height: 300px;
-  max-height: 500;
-  margin-top: 50px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 799px) {
+  .nav__box {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav__box {
+    margin-top: 100px;
+  }
+}
+
+@media (max-height: 500px) {
+  .nav__box {
+    margin-top: 20px;
+  }
+}
+
+.onas, .oferta, .realizacja, .kontakt {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 80px;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: whitesmoke;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.onas:hover, .oferta:hover, .realizacja:hover, .kontakt:hover {
+  background-color: #d65f5f;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
 }
 /*# sourceMappingURL=openmenu.css.map */
