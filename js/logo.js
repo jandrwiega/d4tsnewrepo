@@ -1,8 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const nav = document.querySelector(".navigation");
-const all = document.querySelector(".content");
-const blankleft = document.querySelector(".blank__content--left");
-const blankright = document.querySelector(".blank__content--right");
+const all = document.querySelector(".content__box");
+const footersmall = document.querySelector(".footer");
+const footerbig = document.querySelector(".footer__bigger");
 const change = () =>
 {
     hamburger.classList.toggle("hamburger--active");
@@ -16,5 +16,5 @@ const gback = () =>
     nav.classList.remove("navigation--active");
 }
 all.addEventListener("click", gback);
-blankleft.addEventListener("click", gback);
-blankright.addEventListener("click", gback);
+footersmall.addEventListener("click", gback);
+footerbig.addEventListener("click", gback);
