@@ -1,5 +1,9 @@
 $main-color: #222222;
 $font-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *
 {
     margin: 0;
@@ -34,6 +38,22 @@ $font-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    a
+    {
+        @media(max-width: 799px)
+        {
+            height: 60px;
+            width: 140px;
+        }
+        @media(min-width: 800px)
+        {
+            height: 80px;
+            width: 170px;
+        }  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 @media(max-width: 799px)
 {
     height: 60px;
@@ -109,7 +129,7 @@ top: 0;
         margin-top: 20px;
         //margin-bottom: 25px;
     }
-    background-color: green;
+    //background-color: green;
     min-height: 100vh;
 }
 .blank__content--left, .blank__content--right
@@ -136,6 +156,8 @@ top: 0;
         justify-content: center;
         align-items: center;
         min-height: 200px;
+        //font-family: 'spartan', sans-serif;
+        font-family: 'Lobster', cursive;
     }
     @media(min-width: 800px)
     {
@@ -173,6 +195,11 @@ img
         width: 64px;
         height: 64px;
     }
+    a
+    {
+        text-decoration: none;
+        color: silver;
+    }
 }
 .footer__email
 {
@@ -187,6 +214,11 @@ align-items: center;
         width: 64px;
         height: 64px;
     }
+    a
+    {
+        text-decoration: none;
+        color: silver;
+    }
 }
 .footer__adress
 {
@@ -200,6 +232,11 @@ align-items: center;
     {
         width: 64px;
         height: 64px;
+    }
+    a
+    {
+        text-decoration: none;
+        color: silver;
     }
 }
 .footer__adnotation

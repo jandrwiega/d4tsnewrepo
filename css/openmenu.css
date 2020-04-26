@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@-webkit-keyframes podkreslenie {
+  0% {
+    flex-basis: 0%;
+  }
+  100% {
+    flex-basis: 100%;
+  }
+}
+@keyframes podkreslenie {
+  0% {
+    -ms-flex-preferred-size: 0%;
+        flex-basis: 0%;
+  }
+  100% {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
 .hamburger {
   width: 100%;
   height: 100%;
@@ -77,7 +97,7 @@
 .navigation {
   min-height: 100vh;
   z-index: 5;
-  background-color: brown;
+  background-color: #800000;
   position: fixed;
   top: 0;
   left: 0;
@@ -93,6 +113,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: 'lato', sans-serif;
 }
 
 @media (max-width: 499px) {
@@ -161,21 +182,53 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.onas a, .oferta a, .realizacja a, .kontakt a {
+  text-decoration: none;
+  color: silver;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: calc(100% - 5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: whitesmoke;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
 }
 
 .onas:hover, .oferta:hover, .realizacja:hover, .kontakt:hover {
-  background-color: #d65f5f;
-  border-radius: 25px;
   cursor: pointer;
+}
+
+.onas:hover a, .oferta:hover a, .realizacja:hover a, .kontakt:hover a {
   color: white;
+}
+
+.onas:hover a ~ .nav--border, .oferta:hover a ~ .nav--border, .realizacja:hover a ~ .nav--border, .kontakt:hover a ~ .nav--border {
+  background-color: white;
+  -webkit-animation-name: podkreslenie;
+          animation-name: podkreslenie;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+}
+
+.nav--border {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 5px;
 }
 /*# sourceMappingURL=openmenu.css.map */

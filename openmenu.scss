@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@keyframes podkreslenie
+{
+    0%{flex-basis: 0%;}
+    100% {flex-basis: 100%;}
+}
 .hamburger
 {
     width: 100%;
@@ -81,7 +87,7 @@ top:10px;
         width: 50%;
     }
     z-index: 5;
-    background-color: brown;
+    background-color: #800000;
     position: fixed;
     top: 0;
     left: 0;
@@ -89,6 +95,7 @@ top:10px;
     transition: transform .3s .1s ease-in-out;
     display: flex;
     justify-content: center;
+    font-family: 'lato', sans-serif;
     &--active
     {
         transform: translateX(0%);
@@ -120,16 +127,38 @@ flex-basis: 100%;
 height: 80px;
 font-size: 32px;
 display: flex;
+flex-wrap: wrap;
 justify-content: center;
-align-items: center;
-color: whitesmoke;
+
 transition: all .3s ease-in-out;
+a
+{
+    text-decoration: none;
+    color: silver;
+    flex-basis: 100%;
+    height: calc(100% - 5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 .onas:hover, .oferta:hover, .realizacja:hover, .kontakt:hover
 {
-background-color: lighten(brown, 20%);
-border-radius: 25px;
 cursor: pointer;
-//font-weight: bold;
-color: white;
+a
+{
+    color: white;
+}
+a ~ .nav--border
+{
+    background-color: white;
+    animation-name: podkreslenie;
+    animation-duration: .8s;
+    animation-iteration-count: initial;
+}
+}
+.nav--border
+{
+    flex-basis: 100%;
+    height: 5px; 
 }

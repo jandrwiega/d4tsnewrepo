@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -50,6 +53,32 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo__photo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 799px) {
+  .logo__photo a {
+    height: 60px;
+    width: 140px;
+  }
+}
+
+@media (min-width: 800px) {
+  .logo__photo a {
+    height: 80px;
+    width: 170px;
+  }
 }
 
 @media (max-width: 799px) {
@@ -135,7 +164,6 @@
 }
 
 .content {
-  background-color: green;
   min-height: 100vh;
 }
 
@@ -187,6 +215,7 @@
         -ms-flex-align: center;
             align-items: center;
     min-height: 200px;
+    font-family: 'Lobster', cursive;
   }
 }
 
@@ -240,6 +269,11 @@
   height: 64px;
 }
 
+.footer__phone a {
+  text-decoration: none;
+  color: silver;
+}
+
 .footer__email {
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
@@ -258,6 +292,11 @@
   height: 64px;
 }
 
+.footer__email a {
+  text-decoration: none;
+  color: silver;
+}
+
 .footer__adress {
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
@@ -274,6 +313,11 @@
 .footer__adress img {
   width: 64px;
   height: 64px;
+}
+
+.footer__adress a {
+  text-decoration: none;
+  color: silver;
 }
 
 .footer__adnotation {
