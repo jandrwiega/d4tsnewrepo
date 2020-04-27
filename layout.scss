@@ -125,7 +125,7 @@ top: 0;
     }
     @media(min-width: 800px)
     {
-        flex-basis: calc(100% - 160px);
+        flex-basis: 100%;
         margin-top: 20px;
         //margin-bottom: 25px;
     }
@@ -163,6 +163,18 @@ top: 0;
     {
         display: none;
     }
+}
+.footeradd
+{
+    
+        flex-basis: 100%;
+        margin-bottom: 5px;
+        height: 60px;
+        font-size: 18px;
+        color: silver;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }
 .footer__bigger
 {
