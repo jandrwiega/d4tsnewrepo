@@ -166,7 +166,10 @@ top: 0;
 }
 .footeradd
 {
-    
+    @media(max-width: 799px)
+    {
+        font-size: 16px;
+    }
         flex-basis: 100%;
         margin-bottom: 5px;
         height: 60px;
@@ -175,6 +178,7 @@ top: 0;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Lobster',cursive;
 }
 .footer__bigger
 {
