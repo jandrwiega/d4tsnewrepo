@@ -132,12 +132,18 @@
   }
 }
 
+@media (min-width: 1000px) {
+  .content__form__box {
+    max-height: 430px;
+  }
+}
+
 @media (min-width: 1201px) {
   .content__form__box {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     max-width: 1000px;
-    max-height: 600px;
+    max-height: 430px;
   }
 }
 
@@ -331,5 +337,7 @@
           align-items: center;
   color: #222222;
   font-size: 24px;
+  font-weight: bold;
+  font-family: 'lato',sans-serif;
 }
 /*# sourceMappingURL=kontakt.css.map */
