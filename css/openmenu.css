@@ -96,7 +96,7 @@
 
 .navigation {
   min-height: 100vh;
-  z-index: 5;
+  z-index: 10;
   background-color: #800000;
   position: fixed;
   top: 0;

@@ -1,0 +1,69 @@
+.onas__box {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 799px) {
+  .onas__box {
+    background-color: lightseagreen;
+  }
+}
+
+.onas__box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+@media (max-width: 799px) {
+  .onas__box img {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .onas__box img {
+    display: block;
+  }
+}
+
+.onas__box--text {
+  width: 80%;
+  color: white;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 799px) {
+  .onas__box--text {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 800px) {
+  .onas__box--text {
+    margin-top: 40px;
+    position: relative;
+    z-index: 5;
+    top: -100%;
+  }
+}
+
+.onas__box--text-header {
+  font-size: xx-large;
+}
+
+.onas__box--text-other {
+  font-size: large;
+}
+/*# sourceMappingURL=onas.css.map */
