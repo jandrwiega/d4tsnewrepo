@@ -183,20 +183,6 @@
   }
 }
 
-.blank__content--left, .blank__content--right {
-  /* @media(min-width: 800px)
-    {
-        width: 80px;
-    }*/
-  min-height: 100vh;
-}
-
-@media (max-width: 799px) {
-  .blank__content--left, .blank__content--right {
-    position: none;
-  }
-}
-
 @media (max-width: 799px) {
   .footer {
     -ms-flex-preferred-size: 100%;

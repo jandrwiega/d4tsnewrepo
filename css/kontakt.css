@@ -10,7 +10,6 @@
 }
 
 .content__form {
-  min-height: 100vh;
   background-color: lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,12 +19,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 800px;
+  max-height: 1000px;
 }
 
 @media (max-width: 999px) {
   .content__form {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+    min-height: 100vh;
   }
 }
 
@@ -44,7 +46,6 @@
 }
 
 .content__maps {
-  min-height: 100vh;
   background-color: white;
 }
 
@@ -63,6 +64,8 @@
 @media (min-width: 1400px) {
   .content__maps {
     width: 390px;
+    min-height: 800px;
+    max-height: 1000px;
   }
 }
 
