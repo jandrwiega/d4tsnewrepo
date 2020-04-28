@@ -64,12 +64,12 @@
                     <p class="form__header">
                         SKONTAKTUJ SIĘ Z NAMI
                     </p>
-                    <form action="">
+                    <form action="php/mail.php" method="POST" name="contactform">
                         <input type="text" id="name" name="name" value="" placeholder="Imię i Nazwisko" required>
                   
                         <input type="email" id="email" name="email" value="" placeholder="Adres E-mail" required>
             
-                        <textarea id="text" name="text" value="" placeholder="Napisz nam wiadomość" required></textarea>
+                        <textarea id="text" name="message" value="" placeholder="Napisz nam wiadomość" required></textarea>
                     
                         <input type="submit" name="wyslij" id="wyslij">
                     </form>
