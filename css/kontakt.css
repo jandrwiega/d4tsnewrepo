@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .content__wrapper {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .content__form {
+  padding-bottom: 40px;
   background-color: lightblue;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19,15 +19,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 800px;
-  max-height: 1000px;
 }
 
 @media (max-width: 999px) {
   .content__form {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    min-height: 100vh;
   }
 }
 
@@ -64,8 +61,6 @@
 @media (min-width: 1400px) {
   .content__maps {
     width: 390px;
-    min-height: 800px;
-    max-height: 1000px;
   }
 }
 
@@ -119,6 +114,8 @@
 }
 
 .content__form__box {
+  height: 70%;
+  min-height: 400px;
   background-color: white;
   -webkit-box-shadow: 1px 1px 4px 1px #222222;
           box-shadow: 1px 1px 4px 1px #222222;
@@ -135,23 +132,17 @@
   }
 }
 
-@media (min-width: 1000px) {
-  .content__form__box {
-    max-height: 430px;
-  }
-}
-
 @media (min-width: 1201px) {
   .content__form__box {
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
     max-width: 1000px;
-    max-height: 430px;
   }
 }
 
 .content__form__box form {
   width: 100%;
+  height: calc(100% - 60px);
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -164,6 +155,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 550px) {
+  .content__form__box form {
+    height: calc(100% - 120px);
+  }
 }
 
 .content__form__box form input, .content__form__box form textarea {
@@ -274,7 +271,6 @@
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-top: 25px;
-  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
