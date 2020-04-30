@@ -153,7 +153,7 @@
 .content__box {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  min-height: calc(100vh - 140px);
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,10 +162,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.content {
-  height: 100%;
 }
 
 @media (max-width: 799px) {
@@ -367,5 +363,61 @@
 
 .footer__phone--photo-color, .footer__email--photo-color, .footer__adress--photo-color {
   display: none;
+}
+
+.alert {
+  width: 60%;
+  height: 30vh;
+  background-color: white;
+  border-radius: 25px;
+  min-width: 300px;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("https://img.icons8.com/plasticine/100/000000/administrative-tools.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+}
+
+.alert p {
+  font-size: 40px;
+  color: red;
+  font-weight: bold;
+}
+
+.content__real {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 799px) {
+  .content__real {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  .content__real {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-top: 20px;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

@@ -6,6 +6,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 
 .content__form {
@@ -92,7 +93,6 @@
 }
 
 .content__maps--contact {
-  color: red;
   margin-left: auto;
   margin-right: auto;
 }
@@ -197,7 +197,7 @@
 }
 
 .content__form__box form textarea {
-  resize: vertical;
+  resize: none;
   height: 150px;
   padding-top: 10px;
   padding-bottom: 10px;

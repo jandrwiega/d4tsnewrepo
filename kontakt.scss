@@ -6,6 +6,7 @@
     width: 100%;
    //min-height: 90vh;
     display: flex;
+    height:100%
 }
 .content__form
 {
@@ -86,7 +87,6 @@ background-color: white;
         height: 350px;
         margin-top: 50px;
     }
-    color: red;
     margin-left: auto;
     margin-right: auto;
 }
@@ -161,7 +161,7 @@ background-color: white;
         }
         textarea
         {
-            resize: vertical;
+            resize: none;
             height: 150px;
             padding-top: 10px;
             padding-bottom: 10px;

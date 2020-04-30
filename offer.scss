@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+.content__offer
+{
+    @media(max-width: 799px)
+    {
+        flex-basis: 100%;
+        margin-top: 10px;
+       // margin-bottom: 15px;
+    }
+    @media(min-width: 800px)
+    {
+        flex-basis: 100%;
+        margin-top: 20px;
+        //margin-bottom: 25px;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'lato', sans-serif;
+}
+.systemkmpi
+{
+    @media(max-width: 799px)
+    {
+        flex-basis: calc(100% - 40px);
+    }
+    @media(min-width: 800px)
+    {
+        flex-basis: 80%;
+    }
+    @media(min-width: 1200px)
+    {
+        flex-basis: 70%;
+    }
+    margin-bottom: 30px;
+    height: 400px;
+    //background-color: lightgreen;
+    background-color: white;
+    &--header
+    {
+        flex-basis: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        color: #222222;
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+    }
+    &--background
+    {
+        flex-basis: 100%;
+        height: 300px;
+        img
+        {
+width: 100%;
+height: 300px;
+object-fit: cover;
+opacity: 0.8;
+transition: all .8s ease-in-out;
+        }
+    }
+    &--text
+    {
+        flex-basis: 100%;
+        height: 180px;
+        position: relative;
+        top: -250px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    &--button
+    {
+        flex-basis: 100%;
+        height: 70px;
+        position: relative;
+        top: -250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button
+        {
+            width: 150px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: mediumaquamarine;
+            border: 0;
+            outline: 0;
+            font-size: 16px;
+            font-weight: bold;
+            //box-shadow: 1px 1px 1px 1px #222222;
+            transition: all .3s ease-in-out;
+            display: flex;
+            a
+            {
+                text-decoration: none;
+                color: #222222;
+                width: 100%;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 25px;
+            }
+        }
+        button:focus
+        {
+            border: 1px solid #222222;
+        }
+        button:hover
+        {
+            background-color: lighten(mediumaquamarine, 15%);
+            transform: scale(1.03);
+        }
+    }
+}
+.doradztwo
+{
+    @media(max-width: 799px)
+    {
+        flex-basis: calc(100% - 40px);
+    }
+    @media(min-width: 800px)
+    {
+        flex-basis: 80%;
+    } 
+    @media(min-width: 1200px)
+    {
+        flex-basis: 70%;
+    }
+    height: 400px;
+    margin-bottom: 30px;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
