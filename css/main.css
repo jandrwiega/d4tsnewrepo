@@ -40,12 +40,57 @@
 .content__indexcontainer--box--elements {
   height: 300px;
   background-color: rosybrown;
-  margin-top: 30px;
+  margin-top: 15px;
   border-radius: 15px;
-  padding-top: 15px;
+  padding-top: 0px;
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.content__indexcontainer--box--elements button {
+  outline: 0;
+  border: 0;
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__indexcontainer--box--elements button a {
+  text-decoration: none;
+  color: #222222;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.content__indexcontainer--box--elements button a:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  background-color: darkcyan;
+  color: white;
+}
+
+.content__indexcontainer--box--elements button a:active {
+  border: 1px solid #222222;
 }
 
 @media (max-width: 1400px) {
@@ -80,5 +125,13 @@
 
 .content__indexcontainer--box--elements:last-child {
   margin-bottom: 30px;
+}
+
+#headerdiv1 {
+  background-color: lightskyblue;
+}
+
+#headerdiv2 {
+  background-color: lightgreen;
 }
 /*# sourceMappingURL=main.css.map */

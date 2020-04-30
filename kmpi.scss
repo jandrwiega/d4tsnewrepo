@@ -1,0 +1,19 @@
+.content__kmpi
+{
+    @media(max-width: 799px)
+    {
+        flex-basis: 100%;
+        margin-top: 10px;
+       // margin-bottom: 15px;
+    }
+    @media(min-width: 800px)
+    {
+        flex-basis: 100%;
+        margin-top: 20px;
+        //margin-bottom: 25px;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lato', sans-serif;
+}

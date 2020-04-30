@@ -4,7 +4,6 @@ const all = document.querySelector(".content__box");
 const footersmall = document.querySelector(".footer");
 const footerbig = document.querySelector(".footer__bigger");
 const addedfooter = document.querySelector(".footeradd");
-console.log(addedfooter);
 const change = () =>
 {
     hamburger.classList.toggle("hamburger--active");
