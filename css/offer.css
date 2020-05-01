@@ -85,7 +85,7 @@
   height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.6;
   -webkit-transition: all .8s ease-in-out;
   transition: all .8s ease-in-out;
 }
@@ -100,6 +100,7 @@
   padding-right: 25px;
   font-weight: bold;
   font-size: 19px;
+  color: black;
 }
 
 .systemkmpi--button {

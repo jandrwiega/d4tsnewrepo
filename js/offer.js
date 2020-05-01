@@ -1,6 +1,7 @@
 const kmpiheader = document.querySelector(".systemkmpi--header");
 const kmpiall = document.querySelector(".systemkmpi");
 const kmpibackground = document.querySelector(".systemkmpi--background-photo");
+const kmpitext = document.querySelector(".systemkmpi--text");
 const headercolorswitch = ()=>
 {
     kmpiheader.style.color="mediumaquamarine";
@@ -12,7 +13,7 @@ const headerdefaultcolor = ()=>
 {
     kmpiheader.style.color="#222222";
     kmpiheader.style.transform="scale(1)";
-    kmpibackground.style.opacity="0.8";
+    kmpibackground.style.opacity="0.6";
 }
 
 kmpiall.addEventListener("mouseover",headercolorswitch);

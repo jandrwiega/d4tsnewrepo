@@ -18,13 +18,18 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        height: calc(3 * 300px + 4 * 30px);
+       // height: calc(3 * 300px + 4 * 30px);
         @media(max-width: 350px)
         {
-            height: calc(3 * 330px + 4 * 30px);
+          //  height: calc(3 * 330px + 4 * 30px);
         }
         &--elements
         {
+            &--advertisment
+            {
+                height: calc(100% - 145px);
+                font-size: 1.3rem;
+            }
             button
             {
                 outline: 0;
@@ -70,11 +75,11 @@
             }
             @media(max-width: 350px)
             {
-                height: 330px;
+               // height: 330px;
             }
-            height: 300px;
+          //  height: 300px;
             background-color: rosybrown;
-            margin-top: 15px;
+            margin-top: 20px;
             border-radius: 15px;
             padding-top: 0px;
             padding-bottom: 15px;
@@ -95,6 +100,10 @@
         &--elements:last-child
         {
             margin-bottom: 30px;
+        }
+        &--elements:first-child
+        {
+            margin-top: 10px;
         }
     }
 }
