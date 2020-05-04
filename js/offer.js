@@ -1,27 +1,25 @@
-const kmpiheader = document.querySelector(".systemkmpi--header");
+//KMPI
+const kmpiheader = document.querySelector(".systemkmpi--all--header");
+const kmpicontent = document.querySelector(".systemkmpi--all--content");
+const kmpibutton = document.querySelector(".systemkmpi--all--button");
 const kmpiall = document.querySelector(".systemkmpi");
-const kmpibackground = document.querySelector(".systemkmpi--background-photo");
-const kmpitext = document.querySelector(".systemkmpi--text");
-const kmpibutton = document.querySelector(".systemkmpi--button-btn");
-const kmpibuttonhref = document.querySelector(".systemkmpi--button-a");
+const kmpibackground = document.querySelector(".systemkmpi--photo");
+
 const headercolorswitch = ()=>
 {
-    kmpiheader.style.color="darkcyan";
-    kmpiheader.style.transform="scale(1.05)";
-    kmpiall.style.opacity="0.8";
-    kmpibutton.style.backgroundcolor="darkcyan";
-    kmpibutton.style.transform="scale(1.03)";
-    kmpibuttonhref.style.color="white";
+kmpiall.style.backgroundImage="url(data/kmpi2.png)";
+kmpiall.style.transition=" all .5s ease-in-out";
+kmpicontent.style.color="silver";
+kmpicontent.style.transition="all .5s .2s ease-in-out";
+kmpiheader.style.transform="scale(1.03)";
+kmpiheader.style.transition=".5s ease-in-out";
 }
 
 const headerdefaultcolor = ()=>
 {
-    kmpiheader.style.color="mediumaquamarine";
-    kmpiheader.style.transform="scale(1)";
-    kmpiall.style.opacity="1";
-    kmpibutton.style.backgroundcolor="mediumaquamarine";
-    kmpibutton.style.transform="scale(1)";
-    kmpibuttonhref.style.color="#222222";
+  kmpiall.style.backgroundImage="url(data/kmpi.jpg)";
+  kmpicontent.style.color="black";
+  kmpiheader.style.transform="scale(1)";
 }
 
 kmpiall.addEventListener("mouseover",headercolorswitch);

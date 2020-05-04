@@ -20,14 +20,6 @@
 }
 .systemkmpi
 {
-  /*  &--photo
-    {
-        width: 100%;
-       // height: 100%;
-        object-fit: cover;
-    }*/
-    transition: all .5s ease-in-out;
-    background: url(data/kmpi.jpg);
     @media(max-width: 799px)
     {
         flex-basis: calc(100% - 40px);
@@ -40,84 +32,87 @@
     {
         flex-basis: 70%;
     }
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 30px;
-   // height: 400px;
-    //background-color: lightgreen;
+    font-family: 'lato',sans-serif;
     //background-color: white;
-   background-repeat: no-repeat;
-   background-size: cover;
+    //background-color: white;
+    background-size: cover;
+
+    &--all
+    {
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-image: url(data/kmpi.jpg);
     &--header
     {
-        flex-basis: 100%;
-        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 36px;
-        color: mediumaquamarine;
-        font-weight: bold;
-        transition: all .5s ease-in-out;
-        position: relative;
+        margin-bottom: 20px;
+        flex-basis: 100%;
+       //background-color: red;
+        p
+        {
+            font-size: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-weight: bold;
+            color: silver;
+        }
     }
-    &--background
+    &--content
     {
         flex-basis: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        &--text
-        {
-flex-basis: 100%;
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 20px;
-padding-bottom: 30px;
-//color: mediumaquamarine;
-color: deepskyblue;
-font-weight: bold;
-
-        }
+       padding-top: 10px;
+       padding-bottom: 10px;
+       padding-left: 20px;
+       padding-right: 20px;
+       //background-color: rebeccapurple;
+       margin-bottom: 20px;
     }
     &--button
     {
         flex-basis: 100%;
         height: 70px;
-        position: relative;
+       // background-color: royalblue;
         display: flex;
         justify-content: center;
         align-items: center;
         &-btn
         {
-            width: 150px;
+            width: 140px;
             height: 50px;
             border-radius: 25px;
-            background-color: mediumaquamarine;
             border: 0;
             outline: 0;
-            font-size: 16px;
-            font-weight: bold;
-            //box-shadow: 1px 1px 1px 1px #222222;
-            transition: all .5s ease-in-out;
-            display: flex;
+            background-color: brown;
+            font-size: 19px;
             a
             {
                 text-decoration: none;
                 color: #222222;
                 width: 100%;
-                height: 50px;
+                height: 100%;
+                display: block;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                border-radius: 25px;
-                transition: .5s ease-in-out;
             }
-            
-        }
-        button:focus
-        {
-            border: 1px solid #222222;
         }
     }
+    }
 }
+    
+
+
+
+
+//w budowie/
 .doradztwo
 {
     @media(max-width: 799px)

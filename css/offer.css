@@ -28,17 +28,13 @@
 }
 
 .systemkmpi {
-  /*  &--photo
-    {
-        width: 100%;
-       // height: 100%;
-        object-fit: cover;
-    }*/
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  background: url(data/kmpi.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 30px;
-  background-repeat: no-repeat;
+  font-family: 'lato',sans-serif;
   background-size: cover;
 }
 
@@ -63,53 +59,56 @@
   }
 }
 
-.systemkmpi--header {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  height: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 36px;
-  color: mediumaquamarine;
-  font-weight: bold;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  position: relative;
-}
-
-.systemkmpi--background {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+.systemkmpi--all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url(data/kmpi.jpg);
 }
 
-.systemkmpi--background--text {
+.systemkmpi--all--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  color: deepskyblue;
-  font-weight: bold;
 }
 
-.systemkmpi--button {
+.systemkmpi--all--header p {
+  font-size: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+  color: silver;
+}
+
+.systemkmpi--all--content {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.systemkmpi--all--button {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   height: 70px;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,27 +120,22 @@
           align-items: center;
 }
 
-.systemkmpi--button-btn {
-  width: 150px;
+.systemkmpi--all--button-btn {
+  width: 140px;
   height: 50px;
   border-radius: 25px;
-  background-color: mediumaquamarine;
   border: 0;
   outline: 0;
-  font-size: 16px;
-  font-weight: bold;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-color: brown;
+  font-size: 19px;
 }
 
-.systemkmpi--button-btn a {
+.systemkmpi--all--button-btn a {
   text-decoration: none;
   color: #222222;
   width: 100%;
-  height: 50px;
+  height: 100%;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,13 +145,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 25px;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
-}
-
-.systemkmpi--button button:focus {
-  border: 1px solid #222222;
 }
 
 .doradztwo {
