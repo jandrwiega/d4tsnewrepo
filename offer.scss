@@ -74,6 +74,7 @@
        padding-right: 20px;
        //background-color: rebeccapurple;
        margin-bottom: 20px;
+       color: #666;
     }
     &--button
     {
@@ -90,7 +91,7 @@
             border-radius: 25px;
             border: 0;
             outline: 0;
-            background-color: brown;
+            background-color: lighten(#800000, 10%);
             font-size: 19px;
             a
             {
@@ -102,6 +103,13 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                transition: all .5s ease-in-out;
+            }
+            a:hover
+            {
+                color: #111111;
+                font-weight: bold;
+                cursor: pointer;
             }
         }
     }

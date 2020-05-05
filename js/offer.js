@@ -17,8 +17,8 @@ kmpiheader.style.transition=".5s ease-in-out";
 
 const headerdefaultcolor = ()=>
 {
-  kmpiall.style.backgroundImage="url(data/kmpi.jpg)";
-  kmpicontent.style.color="black";
+  kmpiall.style.backgroundImage="url(data/kmpi3.png)";
+  kmpicontent.style.color="#666666";
   kmpiheader.style.transform="scale(1)";
 }
 
